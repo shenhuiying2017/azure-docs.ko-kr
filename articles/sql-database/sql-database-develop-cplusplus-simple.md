@@ -30,7 +30,7 @@ ms.locfileid: "34644701"
 ## <a id="AzureSQL"></a>가상 컴퓨터에서 Azure SQL Database 및 SQL Server
 Azure SQL은 Microsoft SQL Server에서 빌드되고 가용성이 높고 성능과 확장성이 뛰어난 서비스를 제공하도록 설계되었습니다. 온-프레미스에서 실행되는 전용 데이터베이스를 통해 SQL Azure를 사용하는 많은 이점이 있습니다. SQL Azure에서는 데이터베이스를 설치, 설정, 유지 또는 관리할 필요가 없이 데이터베이스의 콘텐츠와 구조만 관리하면 됩니다. 내결함성과 중복성처럼 데이터 베이스에 대해 일반적으로 걱정하는 것이 모두 기본 제공됩니다. 
 
-Azure에는 현재 Azure SQL server 작업 부하를 호스팅하기 위한 두 가지 옵션, 즉 서비스로서 데이터베이스인 Azure SQL Database와 Virtual Machines(VM)의 SQL server가 있습니다. Azure SQL Database가 새로운 클라우드 기반 응용 프로그램을 위해 클라우드 서비스가 제공하는 비용 절감과 성능 최적화를 활용하는 최선의 방법이라는 점을 제외하고 이 두 옵션간에 차이점을 찾을 수 없습니다. 클라우드로 온-프레미스 응용 프로그램을 마이그레이션 또는 확장하려는 경우 Azure 가상 컴퓨터에서 SQL server가 더 적합할 수 있습니다. 이 문서에서 작업을 더 간단하게 유지하기 위해, Azure SQL Database를 만들어 보겠습니다. 
+Azure에는 현재 Azure SQL server 작업 부하를 호스팅하기 위한 두 가지 옵션, 즉 서비스로서 데이터베이스인 Azure SQL Database와 Virtual Machines(VM)의 SQL server가 있습니다. 클라우드 서비스의 최적화와 비용절감을 위해서는 클라우드 기반 응용 프로그램인 Azure SQL Database이 가장 좋다는 것 말고는 이 두 옵션간의 차이점을 이야기 하지 않겠습니다. 클라우드로 온-프레미스 응용 프로그램을 마이그레이션 또는 확장하려는 경우 Azure 가상 컴퓨터에서 SQL server가 더 적합할 수 있습니다. 이 문서에서 작업을 더 간단하게 유지하기 위해, Azure SQL Database를 만들어 보겠습니다. 
 
 ## <a id="ODBC"></a>데이터 액세스 기술: ODBC 및 OLE DB
 Azure SQL DB에 연결하는 것은 다르지 않고 데이터베이스에 연결하는 방법에는 ODBC(Open Database connectivity) 및 OLE DB(개체 연결 및 포함 데이터베이스)의 두 가지가 있습니다. 최근 몇 년간 Microsoft는 [기본 관계형 데이터 액세스에 대해 ODBC](https://blogs.msdn.microsoft.com/sqlnativeclient/2011/08/29/microsoft-is-aligning-with-odbc-for-native-relational-data-access/)에 맞추어 왔습니다. ODBC은 비교적 간단하고 OLE DB보다 훨씬 빠릅니다. 한 가지 주의할 점은 ODBC는 이전 C 스타일 API를 사용한다는 것입니다. 
